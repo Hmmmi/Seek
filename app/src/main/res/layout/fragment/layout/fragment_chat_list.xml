@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".main.fragment.ChatListFragment"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/page_background">
+
+
+    <include layout="@layout/title_main_activity"></include>
+
+    <!--正在加载-->
+    <!--<LinearLayout-->
+        <!--android:id="@+id/loading_layout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="48dp"-->
+        <!--android:visibility="gone"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/loading_img"-->
+            <!--android:layout_width="32dp"-->
+            <!--android:layout_height="32dp"-->
+            <!--android:src="@drawable/loading"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="48dp"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_marginLeft="16dp"-->
+            <!--android:textSize="16dp"-->
+            <!--android:text="正在加载"-->
+            <!--android:textColor="#c2c2c2"/>-->
+
+    <!--</LinearLayout>-->
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/chat_list_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:id="@+id/no_msg_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/icon_no_msg1"/>-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textSize="22sp"
+                android:textColor="#BEBEBE"
+                android:text="@string/seek_no_msg"/>
+
+        </LinearLayout>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/chat_list_nearby_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            app:fab_colorNormal="@color/colorPrimaryDark"
+            app:fab_icon="@drawable/compass"
+            app:layout_anchor="@+id/chat_list_recycler_view"
+            app:layout_anchorGravity="right|bottom" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</LinearLayout>

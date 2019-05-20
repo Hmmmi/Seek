@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/dialog_de_friend_tv"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:background="@drawable/bg_black_list_button"/>
+
+        <TextView
+            android:id="@+id/dialog_delete_tv"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:background="@drawable/bg_delete_friend_button"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="32px"/>
+
+        <TextView
+            android:id="@+id/dialog_cancel_tv"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:background="@drawable/bg_cancel_button"/>
+
+        <!--空白区域-->
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="32px"/>-->
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

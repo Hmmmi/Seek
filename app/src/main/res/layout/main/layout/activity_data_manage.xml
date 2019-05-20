@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/data_manage_main_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.DataManageActivity"
+    android:orientation="vertical"
+    android:background="@color/page_background">
+
+    <include layout="@layout/title_menu"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!--分割线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/text_line"/>
+        <!--空白区域-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="64px"/>
+        <!--分割线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/text_line"
+            android:layout_marginLeft="62px"
+            android:layout_marginRight="65px"/>
+
+        <!--头像-->
+        <LinearLayout
+            android:id="@+id/headimg_layout"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:clickable="true"
+            android:background="@drawable/bg_layout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="头像"
+                android:layout_gravity="center"
+                android:layout_marginLeft="62px"
+                android:textColor="@color/black_text"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/data_head_img"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginRight="65px"
+                android:padding="2dp"
+                android:layout_gravity="center"
+                android:src="@drawable/headimg3"
+                android:background="@drawable/shape_img_view"/>
+
+        </LinearLayout>
+
+        <!--分割线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/text_line"
+            android:layout_marginLeft="62px"
+            android:layout_marginRight="65px"/>
+        <!--空白区域-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="64px"/>
+        <!--分割线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/text_line"
+            android:layout_marginLeft="62px"
+            android:layout_marginRight="65px"/>
+
+        <!--昵称-->
+        <LinearLayout
+            android:id="@+id/nickname_layout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:clickable="true"
+            android:background="@drawable/bg_layout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="昵称"
+                android:layout_gravity="center"
+                android:layout_marginLeft="62px"
+                android:textColor="@color/black_text"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/data_nickname_tv"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|right"
+                android:layout_marginRight="65px"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:text="nickname"/>
+
+            <!--<ImageView-->
+                <!--android:layout_width="32dp"-->
+                <!--android:layout_height="32dp"-->
+                <!--android:layout_marginRight="65px"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:src="@drawable/ic_right_btn"/>-->
+
+        </LinearLayout>
+
+        <!--分割线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/text_line"
+            android:layout_marginLeft="62px"
+            android:layout_marginRight="65px"/>
+
+        <!--签名-->
+        <LinearLayout
+            android:id="@+id/sign_layout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:clickable="true"
+            android:background="@drawable/bg_layout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="签名"
+                android:layout_gravity="center"
+                android:layout_marginLeft="62px"
+                android:textColor="@color/black_text"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/data_sign_tv"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|right"
+                android:layout_marginRight="65px"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:text="sign"/>
+
+            <!--<ImageView-->
+                <!--android:layout_width="32dp"-->
+                <!--android:layout_height="32dp"-->
+                <!--android:layout_marginRight="65px"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:src="@drawable/ic_right_btn"/>-->
+
+        </LinearLayout>
+
+        <!--分割线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/text_line"
+            android:layout_marginLeft="62px"
+            android:layout_marginRight="65px"/>
+        <!--空白区域-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="64px"/>
+        <!--分割线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/text_line"
+            android:layout_marginLeft="62px"
+            android:layout_marginRight="65px"/>
+
+        <!--生日-->
+        <LinearLayout
+            android:id="@+id/birth_layout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:clickable="true"
+            android:background="@drawable/bg_layout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="生日"
+                android:layout_gravity="center"
+                android:layout_marginLeft="62px"
+                android:textColor="@color/black_text"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/data_birth_tv"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|right"
+                android:layout_marginRight="65px"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:text="0000-00-00"/>
+
+            <!--<ImageView-->
+                <!--android:layout_width="32dp"-->
+                <!--android:layout_height="32dp"-->
+                <!--android:layout_marginRight="65px"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:src="@drawable/ic_right_btn"/>-->
+
+        </LinearLayout>
+
+        <!--分割线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/text_line"
+            android:layout_marginLeft="62px"
+            android:layout_marginRight="65px"/>
+
+        <!--性别-->
+        <LinearLayout
+            android:id="@+id/sex_layout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:clickable="true"
+            android:background="@drawable/bg_layout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="性别"
+                android:layout_gravity="center"
+                android:layout_marginLeft="62px"
+                android:textColor="@color/black_text"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/data_sex_tv"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|right"
+                android:layout_marginRight="65px"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:text="男"/>
+
+            <!--<ImageView-->
+                <!--android:layout_width="32dp"-->
+                <!--android:layout_height="32dp"-->
+                <!--android:layout_marginRight="65px"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:src="@drawable/ic_right_btn"/>-->
+
+        </LinearLayout>
+
+        <!--分割线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/text_line"
+            android:layout_marginLeft="62px"
+            android:layout_marginRight="65px"/>
+
+        <!--地址-->
+        <LinearLayout
+            android:id="@+id/add_layout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:clickable="true"
+            android:background="@drawable/bg_layout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="地址"
+                android:layout_gravity="center"
+                android:layout_marginLeft="62px"
+                android:textColor="@color/black_text"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/data_add_tv"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|right"
+                android:layout_marginRight="65px"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:text="my address"/>
+
+            <!--<ImageView-->
+                <!--android:layout_width="32dp"-->
+                <!--android:layout_height="32dp"-->
+                <!--android:layout_marginRight="65px"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:src="@drawable/ic_right_btn"/>-->
+
+        </LinearLayout>
+
+        <!--分割线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/text_line"
+            android:layout_marginLeft="62px"
+            android:layout_marginRight="65px"/>
+
+        <!--学历-->
+        <LinearLayout
+            android:id="@+id/edu_layout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:clickable="true"
+            android:background="@drawable/bg_layout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="学历"
+                android:layout_gravity="center"
+                android:layout_marginLeft="62px"
+                android:textColor="@color/black_text"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/data_edu_tv"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|right"
+                android:layout_marginRight="65px"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:text="my education"/>
+
+            <!--<ImageView-->
+                <!--android:layout_width="32dp"-->
+                <!--android:layout_height="32dp"-->
+                <!--android:layout_marginRight="65px"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:src="@drawable/ic_right_btn"/>-->
+
+        </LinearLayout>
+
+        <!--分割线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/text_line"
+            android:layout_marginLeft="62px"
+            android:layout_marginRight="65px"/>
+        <!--空白区域-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="64px"/>
+        <!--分割线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/text_line"
+            android:layout_marginLeft="62px"
+            android:layout_marginRight="65px"/>
+
+        <!--账号-->
+        <LinearLayout
+            android:id="@+id/account_layout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:clickable="true"
+            android:background="@drawable/bg_layout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="账号"
+                android:layout_gravity="center"
+                android:layout_marginLeft="62px"
+                android:textColor="@color/black_text"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/data_account_tv"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|right"
+                android:layout_marginRight="65px"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:text="111 1111 1111"/>
+
+            <!--<ImageView-->
+            <!--android:layout_width="32dp"-->
+            <!--android:layout_height="32dp"-->
+            <!--android:layout_marginRight="65px"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:src="@drawable/ic_right_btn"/>-->
+
+        </LinearLayout>
+
+        <!--分割线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/text_line"
+            android:layout_marginLeft="62px"
+            android:layout_marginRight="65px"/>
+
+        <!--密码-->
+        <LinearLayout
+            android:id="@+id/password_layout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:clickable="true"
+            android:background="@drawable/bg_layout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="密码"
+                android:layout_gravity="center"
+                android:layout_marginLeft="62px"
+                android:textColor="@color/black_text"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|right"
+                android:layout_marginRight="65px"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:text="* * * * * * * * * "/>
+
+            <!--<ImageView-->
+                <!--android:layout_width="32dp"-->
+                <!--android:layout_height="32dp"-->
+                <!--android:layout_marginRight="65px"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:src="@drawable/ic_right_btn"/>-->
+
+        </LinearLayout>
+
+        <!--分割线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/text_line"
+            android:layout_marginLeft="62px"
+            android:layout_marginRight="65px"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

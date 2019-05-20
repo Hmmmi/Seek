@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/set_main_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.SetActivity"
+    android:orientation="vertical"
+    android:background="@color/page_background">
+
+    <include layout="@layout/title_sub_activity"></include>
+
+
+    <!--菜单栏-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!--空白区-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="64px"/>
+
+        <!--分割线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/text_line"/>
+
+        <!--资料管理-->
+        <LinearLayout
+            android:id="@+id/layout_text_size_set"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:clickable="true"
+            android:background="@drawable/bg_layout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="字体大小"
+                android:layout_gravity="center"
+                android:layout_marginLeft="62px"
+                android:textColor="@color/black_text"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="65px"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_right_btn"/>
+
+        </LinearLayout>
+
+        <!--分割线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/text_line"/>
+
+        <!--兴趣管理-->
+        <LinearLayout
+            android:id="@+id/layout_them_color_set"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:clickable="true"
+            android:background="@drawable/bg_layout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="主题颜色"
+                android:layout_gravity="center"
+                android:layout_marginLeft="62px"
+                android:textColor="@color/black_text"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="65px"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_right_btn"/>
+
+        </LinearLayout>
+
+        <!--分割线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/text_line"/>
+        <!--空白区域-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="64px"/>
+        <!--分割线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/text_line"/>
+
+        <!--更多-->
+        <LinearLayout
+            android:id="@+id/layout_about"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:clickable="true"
+            android:background="@drawable/bg_layout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="关         于"
+                android:layout_gravity="center"
+                android:layout_marginLeft="62px"
+                android:textColor="@color/black_text"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="65px"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_right_btn"/>
+
+        </LinearLayout>
+
+        <!--分割线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/text_line"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

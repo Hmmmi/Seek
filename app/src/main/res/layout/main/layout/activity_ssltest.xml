@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.SSLTestActivity"
+    android:orientation="vertical">
+
+    <!--正在加载-->
+    <LinearLayout
+        android:id="@+id/loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ssl_loading_img"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/loading"/>
+
+        <TextView
+            android:id="@+id/loading_text"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:layout_marginLeft="16dp"
+            android:textSize="16dp"
+            android:text="正在验证你的证书"
+            android:textColor="#c2c2c2"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

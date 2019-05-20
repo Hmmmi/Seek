@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#c7e6e9</color>
+
+    <!--状态栏底色-->
+    <color name="colorPrimaryDark">#6bbec6</color>
+
+    <color name="colorAccent">#1b6065</color>
+    <color name="page_background">#f2f2f2</color>
+
+    <color name="delete_background">#fa0101</color>
+
+    <color name="black_text">#000000</color>
+    <color name="white_text">#fff</color>
+    <color name="hint_text">#ffffff</color>
+    <color name="text_line">#dfdfdf</color>
+    <color name="button_bg">#1b6065</color>
+    <color name="layout_bg">#c7e6e9</color>
+    <color name="message_bg">#60aab1</color>
+    <color name="button_clicked_bg">#124145</color>
+
+    <color name="interest_text_color">#2d7975</color>
+
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/interest_main_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.InterestManageActivity"
+    android:orientation="vertical"
+    android:background="@color/page_background">
+
+    <include layout="@layout/title_menu"></include>
+
+    <!--分割线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/text_line"/>
+    <!--空白区域-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/interest_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarSize="5dp"
+        android:scrollbarThumbVertical="@color/layout_bg"
+        android:scrollbars="vertical">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
